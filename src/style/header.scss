@@ -1,0 +1,135 @@
+// Định nghĩa các biến màu sắc
+$primary-color: #166987; // Màu nền của thanh điều hướng
+$button-color: #DEAA79;  // Màu nền của nút Join Now và Login
+$button-text-color: white; // Màu chữ trong các nút
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+// Mã SCSS cho thanh điều hướng
+.navbar {
+  background-color: $primary-color;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-right: 1.5rem;
+    }
+
+    a {
+      color: white;
+      font-size: 1rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $button-color;
+      }
+    }
+
+    .dropdown {
+      position: relative;
+      
+      .dropdown-menu {
+        background-color: $primary-color;
+        border: 50px;
+        box-shadow: none;
+        
+        a {
+          color: white;
+          
+          &:hover {
+            color: whiteß;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-buttons {
+    display: flex;
+    align-items: center;
+
+    .btn {
+      background-color: $button-color;
+      color: $button-text-color;
+      border: none;
+      font-size: 1rem;
+      padding: 0.5rem 1.5rem;
+      margin-left: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($button-color, 10%);
+      }
+    }
+  }
+}
+
+.dropdown {
+    .dropdown-toggle {
+      color: white;
+      font-size: 1rem;
+      text-transform: uppercase;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      margin-right: 1.5rem;
+      
+      &:hover {
+        color: $button-color;
+      }
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: $primary-color;
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+
+      a {
+        color: white;
+        padding: 0.5rem 1rem;
+        display: block;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+          background-color: $button-color;
+        }
+      }
+    }
+
+    &:hover .dropdown-menu {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
