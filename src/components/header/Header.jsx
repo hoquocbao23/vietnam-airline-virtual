@@ -1,40 +1,51 @@
 import React from "react";
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import "../../style/header.scss"
-import { FaChevronDown } from 'react-icons/fa';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
+
+
+
 
 const Header = () => {
-    const [isDropdownOpen, setDropdownOpen] = useState(false);
-
-    const handleDropdownToggle = () => {
-        setDropdownOpen(!isDropdownOpen);
-    };
     return (
         <>
-            <nav className="navbar">
-                <div className="navbar-logo">VNVA</div>
-                <ul className="navbar-nav">
-                    <li className="dropdown" onClick={handleDropdownToggle} onMouseLeave={handleDropdownToggle}>
-                        <button className="dropdown-toggle">HUBS <FaChevronDown style={{ marginLeft: '8px' }} /></button>
-                        {isDropdownOpen && (
-                            <div className="dropdown-menu">
-                                <Link to={`/hubs/TanSonNhatAirport`}>Tan Son Nhat International Airport</Link>
-                                <Link to={`/hubs/NoiBaiAirport`}>Noi Bai International Airport</Link>
-                            </div>
-                        )}
-                    </li>
-                    <li><Link to={`/fleet`}>FLEET</Link></li>
-                    <li><Link to={`/routes`}>ROUTES</Link></li>
-                    <li><Link to={`/ranks`}>RANKS</Link></li>
-                    <li><Link to={`/staff`}>STAFF</Link></li>
-                    <li><Link to={`/about`}>ABOUT US</Link></li>
-                </ul>
-                <div className="navbar-buttons">
-                    <button className="btn">Join Now</button>
-                    <button className="btn">Login</button>
-                </div>
-            </nav>
+            <Navbar style={{ backgroundColor: '#166987' }} data-bs-theme="dark" >
+                <Container>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Nav.Link href="#home">VNVA LOGO</Nav.Link>
+                    <Navbar.Collapse id="basic-navbar-nav" >
+                        <Nav className="mx-auto">
+
+                            <NavDropdown title="HUBS" id="basic-nav-dropdown" data-bs-theme="dark" >
+                                <NavDropdown.Item href="hubs/vvts">
+                                    Tan Son Nhat International Airport
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="hubs/vvnb">
+                                    Noi Bai International Airport
+                                </NavDropdown.Item>
+                            </NavDropdown>
+
+                            <Nav.Link href="fleet">FLEET</Nav.Link>
+                            <Nav.Link href="routes">ROUTES</Nav.Link>
+                            <Nav.Link href="ranks">RANKS</Nav.Link>
+                            <Nav.Link href="about">ABOUT US</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                    <div className="d-flex">
+                        <Button variant="warning">JOIN NOW</Button>
+                        <Button variant="warning">LOGIN</Button>
+                    </div>
+                </Container>
+
+            </Navbar>
+
+
+
+
+
         </>
     )
 }
