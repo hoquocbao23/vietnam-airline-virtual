@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
-
+import "./main-layout.scss";
 const MainLayOut = () => {
   return (
     <>
@@ -10,7 +10,7 @@ const MainLayOut = () => {
           {" "}
           <Header />
         </div>
-        <div>
+        <div className="content">
           <Outlet />
         </div>
         <div className="">

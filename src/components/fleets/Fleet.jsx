@@ -6,21 +6,26 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 const Fleet = () => {
   return (
     <>
-      <Container>
-        <Row>
-          {" "}
-          {fleetCardData.map((data, index) => (
-            <Col>
-              <FleetCard
-                key={index}
-                name={data.name}
-                description={data.description}
-                image={data.image}
-              />
-            </Col>
-          ))}
-        </Row>
-      </Container>
+      <div className="fleet">
+        <div className="">
+          <h1 className="fleet-title">Our Fleet</h1>
+        </div>
+        <Container>
+          <Row>
+            {" "}
+            {fleetCardData.map((data, index) => (
+              <Col>
+                <FleetCard
+                  key={index}
+                  name={data.name}
+                  description={data.description}
+                  image={data.image}
+                />
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </div>
     </>
   );
 };
