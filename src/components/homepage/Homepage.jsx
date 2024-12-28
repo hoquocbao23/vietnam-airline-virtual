@@ -6,7 +6,7 @@ const HomePage = () => {
         <>
       <Container fluid className="banner mb-4">
         <Image style={{ width: '100%', height: 'auto' }} 
-            src="public/images/homepage/main_banner.png" fluid  />
+            src="/images/homepage/main_banner.png" fluid  />
       </Container>
 
       <Container className="about-us text-center mt-4">
