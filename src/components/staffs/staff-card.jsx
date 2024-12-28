@@ -6,7 +6,7 @@ const StaffCard = (props) => {
     <>
       <Card style={{ width: "18rem" }}>
         <Card.Img variant="top" src={props.image} className="staff-img" />
-        <Card.Body>
+        <Card.Body className="text-center">
           <Card.Title>{props.name}</Card.Title>
           <Card.Text>{props.position}</Card.Text>
           <div className="d-flex justify-content-center">

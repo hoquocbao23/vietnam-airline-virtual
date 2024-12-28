@@ -20,20 +20,20 @@ const Header = () => {
                 id="basic-nav-dropdown"
                 data-bs-theme="dark"
               >
-                <NavDropdown.Item href="hubs/vvts">
-                  Tan Son Nhat International Airport
+                <NavDropdown.Item href="/hubs/VVNB">
+                    Noi Bai International Airport
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="hubs/vvnb">
-                  Noi Bai International Airport
+                <NavDropdown.Item href="/hubs/VVTS">
+                    Tan Son Nhat International Airport
                 </NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="fleet">FLEET</Nav.Link>
-              <Nav.Link href="routes">ROUTES</Nav.Link>
-              <Nav.Link href="staffs">STAFF</Nav.Link>
-              <Nav.Link href="ranks">RANKS</Nav.Link>
-              <Nav.Link href="about">ABOUT US</Nav.Link>
+              <Nav.Link href="/fleet">FLEET</Nav.Link>
+              <Nav.Link href="/routes">ROUTES</Nav.Link>
+              <Nav.Link href="/staffs">STAFF</Nav.Link>
+              <Nav.Link href="/ranks">RANKS</Nav.Link>
+              <Nav.Link href="/about">ABOUT US</Nav.Link>
             </Nav>
             <div className="d-flex">
             {btnDatas.map((data, index) => (
