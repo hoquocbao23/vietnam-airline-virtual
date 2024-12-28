@@ -11,10 +11,9 @@ const Fleet = () => {
           <h1 className="fleet-title">Our Fleet</h1>
         </div>
         <Container>
-          <Row>
-            {" "}
+          <Row className="g-5"> 
             {fleetCardData.map((data, index) => (
-              <Col>
+              <Col xs={12} sm={4} md={4} lg={4}>
                 <FleetCard
                   key={index}
                   name={data.name}
