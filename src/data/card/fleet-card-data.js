@@ -11,7 +11,7 @@ export const fleetCardData = [
               Wingspan: 34.1 m
               Height: 11.76 m
               `,
-    image: "src/images/fleets/InfiniteFlight_A321.jpg",
+    image: "public/images/fleets/InfiniteFlight_A321.jpg",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ export const fleetCardData = [
             Wingspan: 64.75 m
             Height: 17.05 m
             `,
-      image: "src/images/fleets/InfiniteFlight_A350.jpg",
+      image: "public/images/fleets/InfiniteFlight_A350.jpg",
   },
   {
     id: 3,
@@ -42,6 +42,6 @@ export const fleetCardData = [
                 Height: 18.76 m
 
               `,
-    image: "src/images/fleets/InfiniteFlight_B787.jpg",
+    image: "public/images/fleets/InfiniteFlight_B787.jpg",
   },
 ];

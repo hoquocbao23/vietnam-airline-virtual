@@ -12,7 +12,7 @@ const Header = () => {
       <Navbar expand="lg" style={{ backgroundColor: "#166987" }} data-bs-theme="dark">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Nav.Link href="/"><Image style={{ width: '50px', height: '50px' }}  src="src/images/logo/Vietnam-Airlines-Favicon.png"/></Nav.Link>
+          <Nav.Link href="/"><Image style={{ width: '50px', height: '50px' }}  src="public/images/logo/Vietnam-Airlines-Favicon.png"/></Nav.Link>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
               <NavDropdown
