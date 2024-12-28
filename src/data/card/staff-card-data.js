@@ -1,76 +1,53 @@
 export const staffData = [
     {
       id: 1,
-      image: "https://sea1.discourse-cdn.com/infiniteflight/user_avatar/community.infiniteflight.com/ifvn-taixipo/288/871306_2.png",
+      image: "/images/staffs/tai_xipo.jpeg",
       name: "IFVN-TaiXiPo",
       position: "CEO",
       account: "https://community.infiniteflight.com/u/IFVN-TaiXipo/summary"
-      
     },
+
     {
         id: 2,
-        image: "holder.js/100px180",
-        name: "IFVN-TaiXiPo",
-        position: "CEO",
-        account: "https://community.infiniteflight.com/u/IFVN-TaiXipo/summary"
-        
+        image: "/images/staffs/mathieu_price.png",
+        name: "Mathieu Price",
+        position: "COO",
+        account: "https://community.infiniteflight.com/u/mathieu_price/summary"  
       },
+
       {
         id: 3,
-        image: "holder.js/100px180",
-        name: "IFVN-TaiXiPo",
-        position: "CEO",
-        account: "https://community.infiniteflight.com/u/IFVN-TaiXipo/summary"
-        
+        image: "/images/staffs/siuat.png",
+        name: "siUatparadiz",
+        position: "CCO",
+        account: "https://community.infiniteflight.com/u/siuatparadiz/summary"  
       },
+
       {
         id: 4,
-        image: "holder.js/100px180",
-        name: "IFVN-TaiXiPo",
-        position: "CEO",
-        account: "https://community.infiniteflight.com/u/IFVN-TaiXipo/summary"
+        image: "/images/staffs/alden_hoang.jpeg",
+        name: "Alden_Hoang",
+        position: "Event Manager",
+        account: "https://community.infiniteflight.com/u/alden_hoang130/summary"
         
       },
+
       {
         id: 5,
-        image: "holder.js/100px180",
-        name: "IFVN-TaiXiPo",
-        position: "CEO",
-        account: "https://community.infiniteflight.com/u/IFVN-TaiXipo/summary"
+        image: "/images/staffs/michael_tran.png",
+        name: "Michael_Tran",
+        position: "Recruiter",
+        account: "https://community.infiniteflight.com/u/michael_tran123/summary"
         
       },
+
       {
         id: 6,
-        image: "holder.js/100px180",
-        name: "IFVN-TaiXiPo",
-        position: "CEO",
-        account: "https://community.infiniteflight.com/u/IFVN-TaiXipo/summary"
+        image: "/images/staffs/kat.png",
+        name: "Katty",
+        position: "Social Manager",
+        account: "https://community.infiniteflight.com/u/kat/summary"
         
       },
-      {
-        id: 7,
-        image: "holder.js/100px180",
-        name: "IFVN-TaiXiPo",
-        position: "CEO",
-        account: "https://community.infiniteflight.com/u/IFVN-TaiXipo/summary"
-        
-      },
-      {
-        id: 8,
-        image: "holder.js/100px180",
-        name: "IFVN-TaiXiPo",
-        position: "CEO",
-        account: "https://community.infiniteflight.com/u/IFVN-TaiXipo/summary"
-        
-      },
-      {
-        id: 9,
-        image: "holder.js/100px180",
-        name: "IFVN-TaiXiPo",
-        position: "CEO",
-        account: "https://community.infiniteflight.com/u/IFVN-TaiXipo/summary"
-        
-      },
-    
   ];
   

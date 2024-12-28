@@ -3,18 +3,21 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Fleet from "../components/fleets/Fleet";
 import Staff from "../components/staffs/Staff";
-import Sgn from "../components/hubs/sgn/Sgn";
+
 import HomePage from "../components/homepage/Homepage";
 import Rank from "../components/ranks/Rank";
 import About from "../components/about/About";
 import Routes from "../components/routes/Routes";
+
+import HubPage from "../components/hubs/Hubpage";
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
     children: [
       {
-        path: "/",
+        index: true,
         element: <HomePage />,
       },
       {
@@ -26,9 +29,10 @@ const router = createBrowserRouter([
         element: <Staff/>,
       },
       {
-        path: "hubs/vvts",
-        element: <Sgn/>,
+        path: "hubs/:hubId", // Đảm bảo chỉ định rõ ràng và không lặp lại "hubs"
+        element: <HubPage />,
       },
+      
       {
         path: "ranks",
         element: <Rank/>,

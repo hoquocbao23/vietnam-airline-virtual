@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Rank = () => {
+const HomePage = () => {
     return (
         <Container fluid className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
           <Row>
@@ -13,4 +13,4 @@ const Rank = () => {
       );
 }
 
-export default Rank
+export default HomePage
