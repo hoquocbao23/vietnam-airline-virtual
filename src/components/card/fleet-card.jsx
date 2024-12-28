@@ -1,4 +1,4 @@
-import { Button, Card } from "react-bootstrap";
+import { Button, Card, Image } from "react-bootstrap";
 
 const FleetCard = (props) => {
   return (
@@ -8,6 +8,7 @@ const FleetCard = (props) => {
         <Card.Body>
           <Card.Title>{props.name}</Card.Title>
           <Card.Text>{props.description}</Card.Text>
+          <Card.Text>{props.details}</Card.Text>
         </Card.Body>
       </Card>
     </>

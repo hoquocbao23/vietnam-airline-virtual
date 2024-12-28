@@ -1,11 +1,11 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 const Routes = () => {
   return (
-    <Container fluid className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+    <Container>
       <Row>
-        <Col className="text-center">
-          <h1>To Be Filled Up With A Better Presentation</h1>
+        <Col xs={6} md={4}>
+          <Image src="src/images/routes/routes.png" />
         </Col>
       </Row>
     </Container>
