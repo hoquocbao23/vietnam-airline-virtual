@@ -8,8 +8,6 @@ import resolve from '@rollup/plugin-node-resolve';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    react(),
-    resolve(),
-    commonjs(),
-    terser(),],
+    react()
+  ],
 })
