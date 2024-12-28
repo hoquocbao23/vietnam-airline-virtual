@@ -5,7 +5,7 @@ const Routes = () => {
     <Container>
       <Row>
         <Col xs={6} md={4}>
-          <Image src="src/images/routes/routes.png" />
+          <Image src="/images/routes/routes.png" />
         </Col>
       </Row>
     </Container>

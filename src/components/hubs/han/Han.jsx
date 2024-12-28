@@ -6,7 +6,7 @@ const Han = () => {
       <Row>
         <Col className="text-center">
           <h1>To Be Filled Up With A Better Presentation</h1>
-            <Image src="src/images/hubs/han/han.JPEG" roundedCircle />
+            <Image src="/images/hubs/han/han.JPEG" roundedCircle />
         </Col>
       </Row>
     </Container>
