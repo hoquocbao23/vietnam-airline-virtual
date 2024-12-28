@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer">
         <Container fluid className="wrap-footer">
           <Row className="content-footer">
-            <Col><Image src="public/images/logo/footer_banner.jpg" style={{ width: '100%', height: 'auto' }} /></Col>
+            <Col><Image src="/images/logo/footer_banner.png" style={{ width: '100%', height: 'auto' }} /></Col>
             <Col className="footer-right">
               <Col>Ready to fly? Join us today</Col>
               <Row>

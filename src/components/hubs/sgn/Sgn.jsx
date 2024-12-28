@@ -6,7 +6,7 @@ const Sgn = () => {
       <Row>
         <Col className="text-center">
           <h1>To Be Filled Up With A Better Presentation</h1>
-            <Image src="src/images/hubs/sgn/sgn.JPEG" roundedCircle />
+            <Image src="/images/hubs/sgn/sgn.JPEG" roundedCircle />
         </Col>
       </Row>
     </Container>
