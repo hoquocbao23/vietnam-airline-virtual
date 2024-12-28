@@ -1,4 +1,4 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row, Image } from "react-bootstrap";
 import "../footer/footer.scss";
 import { btnDatas } from "../../data/button/button-data";
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer">
         <Container fluid className="wrap-footer">
           <Row className="content-footer">
-            <Col>Image</Col>
+            <Col><Image src="src/images/logo/footer_banner.jpg" style={{ width: '100%', height: 'auto' }} /></Col>
             <Col className="footer-right">
               <Col>Ready to fly? Join us today</Col>
               <Row>
