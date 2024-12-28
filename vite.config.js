@@ -11,6 +11,5 @@ export default defineConfig({
     react(),
     resolve(),
     commonjs(),
-    terser(),
-  ],
-});
+    terser(),],
+})
