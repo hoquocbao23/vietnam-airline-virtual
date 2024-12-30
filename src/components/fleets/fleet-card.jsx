@@ -19,7 +19,8 @@ const FleetCard = (props) => {
         <Card.Body>
           <Card.Title className="text-center fw-bold">{props.name}</Card.Title>
           <Card.Text>{props.description}</Card.Text>
-          <Card.Text><TextWithLineBreaks text={props.details} /></Card.Text>
+          <hr />
+          <Card.Text ><TextWithLineBreaks text={props.details} /></Card.Text>
         </Card.Body>
       </Card>
     </>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap");
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 $primary-color: #166987; // Màu nền của thanh điều hướng
@@ -7,24 +7,22 @@ $button-text-color: #FFFFFF; // Màu chữ trong các nút
 
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Prompt', sans-serif !important;
 }
 
 
-.d-flex .btn {
-    margin-right: 10px;
-    
-    
-}
+// .d-flex .btn {
+//     margin-right: 10px;
+// }
 
-.navbar-nav .nav-link {
-    color: white;
-    /* Đổi màu chữ cho các item trong nav */
-    margin-right: 10px;
+// .navbar-nav .nav-link {
+//     color: white;
+//     /* Đổi màu chữ cho các item trong nav */
+//     margin-right: 10px;
 
-    &:hover{
-        color: #d3d3d3
-        /* Màu chữ khi hover */
-    }
-}
+//     &:hover{
+//         color: #d3d3d3
+//         /* Màu chữ khi hover */
+//     }
+// }
 

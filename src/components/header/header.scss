@@ -1,0 +1,17 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.custom-button  {
+    background-color: #FCC737 !important; // Màu nền mặc định
+    color: black !important; // Màu chữ mặc định
+    border: none; // Không có viền
+    padding: 10px 20px; // Kích thước nút
+    font-size: 1rem; // Kích thước chữ
+    border-radius: 5px; // Bo góc cho nút
+    transition: background-color 0.3s ease, color 0.3s ease; // Hiệu ứng mượt khi chuyển đổi
+    
+    &:hover {
+      background-color: white !important; // Màu nền khi hover
+      color: black !important; // Màu chữ khi hover
+     
+    }
+  }

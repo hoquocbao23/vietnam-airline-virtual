@@ -6,26 +6,30 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import { btnDatas } from "../../data/button/button-data";
+import "./header.scss";
+
 const Header = () => {
   return (
     <>
       <Navbar expand="lg" style={{ backgroundColor: "#166987" }} data-bs-theme="dark">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Nav.Link href="/"><Image style={{ width: '50px', height: '50px' }}  src="/images/logo/vietnam_airlines_favicon.png"/></Nav.Link>
+          <Nav.Link href="/" className="d-flex align-items-center">
+            <Image style={{ width: '60px', height: '60px' }} src="/images/logo/vietnam_airlines_favicon.png" />
+          </Nav.Link>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mx-auto">
+            <Nav className="mx-auto" >
               <NavDropdown
                 title="HUBS"
                 id="basic-nav-dropdown"
                 data-bs-theme="dark"
               >
                 <NavDropdown.Item href="/hubs/VVNB">
-                    Noi Bai International Airport
+                  Noi Bai International Airport
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/hubs/VVTS">
-                    Tan Son Nhat International Airport
+                  Tan Son Nhat International Airport
                 </NavDropdown.Item>
               </NavDropdown>
 
@@ -33,18 +37,16 @@ const Header = () => {
               <Nav.Link href="/routes">ROUTES</Nav.Link>
               <Nav.Link href="/staffs">STAFF</Nav.Link>
               <Nav.Link href="/ranks">RANKS</Nav.Link>
-              <Nav.Link href="/about">ABOUT US</Nav.Link>
             </Nav>
-            <div className="d-flex">
-            {btnDatas.map((data, index) => (
-              <Button href={data.link} key={index} variant="warning" className="mx-2">
-                {data.name.toUpperCase()}
-                
-              </Button>
-            ))}
-          </div>
+            <div className="d-flex ">
+              {btnDatas.map((data, index) => (
+                <Button target="_blank" rel="noopener noreferrer" href={data.link} key={index} className="mx-1 custom-button">
+                  {data.name.toUpperCase()}
+                </Button>
+              ))}
+            </div>
           </Navbar.Collapse>
-          
+
         </Container>
       </Navbar>
     </>
