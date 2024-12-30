@@ -1,64 +1,115 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
-
 .footer {
-  bottom: 0;
-  background-color: #f5e0cf;
-  width: 100%;
+  background-color: #166987; // Nền footer
+  color: white; // Màu chữ mặc định
+  font-family: 'Poppins', sans-serif; // Font chữ
+  padding: 20px 0;
 
   .wrap-footer {
-    padding: 1rem;
-    
-    @media (min-width: 768px) {
-      padding: 2rem;
-    }
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
   }
 
   .content-footer {
-    margin: 1rem 0;
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px; // Khoảng cách giữa các hàng khi xuống dòng
 
-    @media (min-width: 768px) {
-      flex-direction: row;
-      align-items: center;
-      margin: 2rem 0;
-    }
-  }
+    .footer-column {
+      flex: 1; // Đảm bảo các cột đều nhau
+      margin-bottom: 20px;
 
-  .footer-right {
-    height: auto;
-    min-height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    @media (min-width: 768px) {
-      text-align: right;
-      align-items: flex-end;
-    }
+      &.footer-image {
+        display: flex;
+        justify-content: center; // Căn giữa ảnh theo chiều ngang
+        align-items: center; // Căn giữa ảnh theo chiều dọc
 
-    button {
-      margin: 0.5rem;
-      white-space: nowrap;
-      
-      @media (max-width: 576px) {
-        width: 100%;
-        margin: 0.5rem 0;
+        img {
+          width: 100%;
+          height: auto;
+          max-width: 200px; // Đặt kích thước tối đa cho ảnh
+          display: block;
+        }
+      }
+
+      &.footer-info {
+        display: flex;
+        flex-direction: column; // Nội dung sắp xếp theo chiều dọc
+        align-items: center; // Căn giữa theo chiều ngang
+        justify-content: center; // Căn giữa theo chiều dọc
+        text-align: center; // Văn bản căn giữa
+        height: 100%; // Đảm bảo chiếm toàn bộ chiều cao của cột
+
+        .footer-title {
+          font-size: 1.2rem; // Kích thước chữ tiêu đề
+          font-weight: 600; // Đậm tiêu đề
+          margin-bottom: 15px; // Khoảng cách với các link
+        }
+
+        .footer-links {
+          display: flex;
+          flex-direction: column; // Sắp xếp các link theo cột
+          gap: 10px; // Khoảng cách giữa các link
+
+          a {
+            font-size: 0.9rem; // Kích thước chữ link
+            color: #fcc737; // Màu vàng cho link
+            text-decoration: none; // Bỏ gạch chân
+
+            &:hover {
+              color: white; // Màu trắng khi hover
+              text-decoration: underline; // Gạch chân khi hover
+            }
+          }
+        }
+      }
+
+      &.footer-action {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .ready-to-fly {
+          font-weight: bold;
+          font-size: 1.2rem;
+          margin-bottom: 15px;
+        }
+
+        .footer-buttons {
+          display: flex;
+          justify-content: center;
+          gap: 10px; // Khoảng cách giữa các nút
+          flex-wrap: wrap;
+
+          .custom-button {
+            font-size: 0.9rem;
+            padding: 8px 16px;
+            background-color: #fcc737;
+            color: black;
+            border: none;
+
+            &:hover {
+              background-color: white; // Màu nền khi hover
+              color: #166987; // Màu chữ khi hover
+              border: 1px solid #fcc737; // Thêm viền vàng
+            }
+          }
+        }
       }
     }
   }
 
   .content-bottom {
     text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-    
-    @media (min-width: 768px) {
-      font-size: 1rem;
-      padding: 1.5rem;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    opacity: 0.7;
+
+    p {
+      margin: 0;
     }
   }
 }

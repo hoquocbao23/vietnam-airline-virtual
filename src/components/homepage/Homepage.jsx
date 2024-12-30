@@ -1,12 +1,17 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "./homepage.scss";
+import { Helmet } from 'react-helmet-async';
 const HomePage = () => {
-    return (
-        <>
-      <Container fluid className="banner mb-4">
-        <Image style={{ width: '100%', height: 'auto' }} 
-            src="/images/homepage/main_banner.png" fluid  />
+  return (
+    <>
+      <Helmet>
+        <title>Home | Vietnam Airlines Virtual</title>
+        <meta name="description" content="Our Routes" />
+      </Helmet>
+      <Container fluid className="banner mb-4 p-0">
+        <Image style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+          src="/images/homepage/main_banner.png" fluid />
       </Container>
 
       <Container className="about-us text-center mt-4">
@@ -14,17 +19,17 @@ const HomePage = () => {
           <Col>
             <h2>About Us</h2>
             <p>
-            Vietnam Airlines Virtual is a virtual airline also a vibrant community for aviation enthusiasts who loves to fly Infinite Flight Simulator in Vietnam. 
-            With a mission to create a professional and engaging platform, Vietnam Airlines Virtual provides a realistic and captivating flying experience to members. 
-            The community currently operates a fleet of three aircraft, offering versatility for various flight routes. Our main hubs are Noi Bai International Airport and Tan Son Nhat International Airport, serving as central points for domestic and international connections. 
-            Vietnam Airlines Virtual is not just a place to fulfill the passion for flying but also a hub for networking, learning, and exploring the boundless skies together.
+              Vietnam Airlines Virtual is a virtual airline also a vibrant community for aviation enthusiasts who loves to fly Infinite Flight Simulator in Vietnam.
+              With a mission to create a professional and engaging platform, Vietnam Airlines Virtual provides a realistic and captivating flying experience to members.
+              The community currently operates a fleet of three aircraft, offering versatility for various flight routes. Our main hubs are Noi Bai International Airport and Tan Son Nhat International Airport, serving as central points for domestic and international connections.
+              Vietnam Airlines Virtual is not just a place to fulfill the passion for flying but also a hub for networking, learning, and exploring the boundless skies together.
             </p>
           </Col>
         </Row>
       </Container>
-     
+
     </>
-    );
+  );
 }
 
 export default HomePage

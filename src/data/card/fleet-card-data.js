@@ -1,7 +1,7 @@
 export const fleetCardData = [
   {
     id: 1,
-    name: "A321",
+    name: "Airbus A321",
     description:
       "As the main work horse of Vietnam Airlines fleet, the aircraft is mainly used for domestic, ASEAN and some China, South Korea and Japan destinations.",
     details: `Manufacturer: Airbus.
@@ -16,7 +16,7 @@ export const fleetCardData = [
   },
   {
     id: 2,
-    name: "A350-900",
+    name: "Airbus A350-900",
     description:
       "Vietnam Airlines is one of the first airlines in the world to introduce this new generation of luxury aircraft. The 305-seat A350 XWB promises passengers the quality, comfort and style as they travel from/to Vietnamese cities, or between Vietnam and Asian/European destinations.",
     details: `Manufacturer: Airbus.
@@ -31,7 +31,7 @@ export const fleetCardData = [
   },
   {
     id: 3,
-    name: "B787-9",
+    name: "Boeing 787-9 Dreamliner",
     description:
       "As one of the first B787 operators in South East Asia, the Dreamliner offers comfortable luxury seating for over 300 passengers to ensure the most enjoyable flight. VNA’s B787 fleet now operates flights between airports in Vietnam as well as throughout Europe and North East Asia.",
       details: `Manufacturer: Boeing.

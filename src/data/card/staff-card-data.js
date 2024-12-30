@@ -9,10 +9,10 @@ export const staffData = [
 
     {
         id: 2,
-        image: "/images/staffs/mathieu_price.png",
-        name: "Mathieu Price",
+        image: "/images/staffs/capt_prampram.png",
+        name: "Capt_PramPram",
         position: "COO",
-        account: "https://community.infiniteflight.com/u/mathieu_price/summary"  
+        account: "https://community.infiniteflight.com/u/capt_prampram/summary"  
       },
 
       {

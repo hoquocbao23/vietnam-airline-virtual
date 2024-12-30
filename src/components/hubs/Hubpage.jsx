@@ -1,29 +1,46 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { hubDatas } from "../../data/hubs/hubs-data";
-import {Container, Col, Row, Image } from 'react-bootstrap';
+import { Container, Col, Row, Image } from 'react-bootstrap';
+import { useState, useEffect } from "react";
+import { Helmet } from 'react-helmet-async';
 
 const HubPage = () => {
-    const { hubId } = useParams(); // Lấy giá trị hubId từ URL
-    const hub = hubDatas[hubId];
+    const { hubId } = useParams();
+    const navigate = useNavigate(); // Lấy giá trị hubId từ URL
+    const [hub, setHub] = useState(null);
+    
+    useEffect(() => {
+        if (hubDatas[hubId]) {
+          setHub(hubDatas[hubId]); // Cập nhật hub nếu hubId hợp lệ
+        } else {
+          setHub(null); // Đặt hub về null nếu hubId không hợp lệ
+          navigate("/"); // Chuyển hướng đến trang 404
+        }
+      }, [hubId, hubDatas, navigate]); 
+
     if (!hub) {
-        return <p>Hub not found!</p>; // Xử lý khi hubId không khớp với dữ liệu
+        return null; // Xử lý khi hubId không khớp với dữ liệu
     }
 
     return (
         <>
-        <Container className="mt-4 mb-5" >
-            <Row className="justify-content-center text-center mb-4">
-                <Col style={{ fontSize: "2rem", fontWeight: "bold" }}>{hub.title}</Col>
-            </Row>
+            <Helmet>
+                <title>{hub.title} | Vietnam Airlines Virtual</title>
+                <meta name="description" content="Our Hubs" />
+            </Helmet>
+            <Container className="mt-4 mb-5" >
+                <Row className="justify-content-center text-center mb-4 mt-4 page-title">
+                    <Col style={{ fontSize: "1.5rem", fontWeight: "bold" }}>{hub.title}</Col>
+                </Row>
 
-            <Row className="justify-content-center">
-                <Col xs={12} sm={8} md={6} ><Image src={hub.img} fluid/></Col>
-            </Row> 
+                <Row className="justify-content-center">
+                    <Col xs={12} sm={10} md={8} ><Image style={{ maxWidth: "100%", height: "auto", borderRadius: "5px" }} src={hub.img} fluid /></Col>
+                </Row>
 
-            <Row className="justify-content-center mt-4">
-            <Col xs={12} sm={10} md={8} lg={6} style={{ fontSize: "1.1rem" }}>{hub.description}</Col>
-            </Row>                
-        </Container>   
+                <Row className="justify-content-center mt-4">
+                    <Col style={{ fontSize: "1.1rem", textAlign: "justify" }}>{hub.description}</Col>
+                </Row>
+            </Container>
         </>
     );
 };
