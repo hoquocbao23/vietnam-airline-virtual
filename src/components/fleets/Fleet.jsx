@@ -8,12 +8,12 @@ const Fleet = () => {
     <>
       <Helmet>
         <title>Fleet | Vietnam Airlines Virtual</title>
-        <meta name="description" content="Our Routes" />
+        <meta name="description" content="Our Fleet" />
       </Helmet>
       <Container className="mt-5 mb-5">
         <Row className="justify-content-center mb-4 page-title">
           <Col xs={12} md={8} className="text-center">
-            <h1>Our Fleets</h1>
+            <h1>Our Fleet</h1>
           </Col>
         </Row>
         <Row className="g-5">

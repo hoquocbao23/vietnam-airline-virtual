@@ -6,7 +6,6 @@ import Staff from "../components/staffs/Staff";
 
 import HomePage from "../components/homepage/Homepage";
 import Rank from "../components/ranks/Rank";
-import About from "../components/about/About";
 import Routes from "../components/routes/Routes";
 
 import HubPage from "../components/hubs/Hubpage";
@@ -29,17 +28,13 @@ const router = createBrowserRouter([
         element: <Staff/>,
       },
       {
-        path: "hubs/:hubId", // Đảm bảo chỉ định rõ ràng và không lặp lại "hubs"
+        path: "hubs/", // Đảm bảo chỉ định rõ ràng và không lặp lại "hubs"
         element: <HubPage />,
       },
       
       {
         path: "ranks",
         element: <Rank/>,
-      },
-      {
-        path: "about",
-        element: <About/>,
       },
       {
         path: "routes",

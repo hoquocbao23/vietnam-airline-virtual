@@ -9,6 +9,7 @@ const StaffCard = (props) => {
         <Card.Body className="text-center custom-card-body">
           <Card.Title>{props.name}</Card.Title>
           <Card.Text>{props.position}</Card.Text>
+          <Card.Text>{props.introdution}</Card.Text>
           <div className="d-flex justify-content-center">
             <Button target="_blank" rel="noopener noreferrer" href={props.account} className="custom-card-button">
               Visit

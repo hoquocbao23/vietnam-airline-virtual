@@ -1,44 +1,37 @@
-import { useParams, useNavigate } from "react-router-dom";
+import React from 'react';
 import { hubDatas } from "../../data/hubs/hubs-data";
 import { Container, Col, Row, Image } from 'react-bootstrap';
-import { useState, useEffect } from "react";
+import HubLayout from "./Hub-Layout";
 import { Helmet } from 'react-helmet-async';
 
 const HubPage = () => {
-    const { hubId } = useParams();
-    const navigate = useNavigate(); // Lấy giá trị hubId từ URL
-    const [hub, setHub] = useState(null);
-    
-    useEffect(() => {
-        if (hubDatas[hubId]) {
-          setHub(hubDatas[hubId]); // Cập nhật hub nếu hubId hợp lệ
-        } else {
-          setHub(null); // Đặt hub về null nếu hubId không hợp lệ
-          navigate("/"); // Chuyển hướng đến trang 404
-        }
-      }, [hubId, hubDatas, navigate]); 
 
-    if (!hub) {
-        return null; // Xử lý khi hubId không khớp với dữ liệu
-    }
 
     return (
         <>
             <Helmet>
-                <title>{hub.title} | Vietnam Airlines Virtual</title>
+                <title>HUBS | Vietnam Airlines Virtual</title>
                 <meta name="description" content="Our Hubs" />
             </Helmet>
-            <Container className="mt-4 mb-5" >
-                <Row className="justify-content-center text-center mb-4 mt-4 page-title">
-                    <Col style={{ fontSize: "1.5rem", fontWeight: "bold" }}>{hub.title}</Col>
+
+            <Container>
+                <Row className="justify-content-center mb-4 mt-5 page-title">
+                    <Col xs={12} md={8} className="text-center">
+                        <h1>Our Hubs</h1>
+                    </Col>
                 </Row>
 
-                <Row className="justify-content-center">
-                    <Col xs={12} sm={10} md={8} ><Image style={{ maxWidth: "100%", height: "auto", borderRadius: "5px" }} src={hub.img} fluid /></Col>
-                </Row>
-
-                <Row className="justify-content-center mt-4">
-                    <Col style={{ fontSize: "1.1rem", textAlign: "justify" }}>{hub.description}</Col>
+                <Row className="g-5 mb-5 ">
+                    {hubDatas.map((data, index) => (
+                        <Col xs={12} sm={12} md={12} lg={12} >
+                            <HubLayout
+                                key={index}
+                                img={data.img}
+                                name={data.name}
+                                description={data.description}
+                            />
+                        </Col>
+                    ))}
                 </Row>
             </Container>
         </>

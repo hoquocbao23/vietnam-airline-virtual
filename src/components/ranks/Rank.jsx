@@ -7,7 +7,7 @@ const HomePage = () => {
     <>
       <Helmet>
         <title>Ranks | Vietnam Airlines Virtual</title>
-        <meta name="description" content="Our Routes" />
+        <meta name="description" content="Our Rank" />
       </Helmet>
       <Container fluid className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
         <Row>

@@ -18,21 +18,8 @@ const Header = () => {
             <Image style={{ width: '60px', height: '60px' }} src="/images/logo/vietnam_airlines_favicon.png" />
           </Nav.Link>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mx-auto" >
-              <NavDropdown
-                title="HUBS"
-                id="basic-nav-dropdown"
-                data-bs-theme="dark"
-              >
-                <NavDropdown.Item href="/hubs/VVNB">
-                  Noi Bai International Airport
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/hubs/VVTS">
-                  Tan Son Nhat International Airport
-                </NavDropdown.Item>
-              </NavDropdown>
-
+            <Nav className="mx-auto custom-nav" >
+              <Nav.Link href="/hubs">HUBS</Nav.Link>
               <Nav.Link href="/fleet">FLEET</Nav.Link>
               <Nav.Link href="/routes">ROUTES</Nav.Link>
               <Nav.Link href="/staffs">STAFF</Nav.Link>

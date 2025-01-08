@@ -1,38 +1,46 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 .custom-card-body {
-    background-color: #f8f9fa; // Màu nền cho Card.Body
-    padding: 20px; // Khoảng cách bên trong
-    border-top: 1px solid #dee2e6; // Đường kẻ trên cùng để tách biệt với ảnh
+  display: flex;
+  /* Sử dụng flexbox cho phần thân của card */
+  flex-direction: column;
+  /* Các phần tử con xếp theo chiều dọc */
+  justify-content: space-between;
+  /* Đảm bảo rằng các phần tử sẽ có khoảng cách đều */
+  height: 100%;
+  /* Đảm bảo chiều cao card đủ chứa nội dung */
+  background-color: #f8f9fa; // Màu nền cho Card.Body
+  padding: 20px; // Khoảng cách bên trong
+  border-top: 1px solid #dee2e6; // Đường kẻ trên cùng để tách biệt với ảnh
+}
+
+.custom-card-body .card-title {
+  font-size: 1.25rem; // Kích thước tiêu đề
+  font-weight: bold; // Đậm tiêu đề
+  color: #343a40; // Màu chữ tiêu đề
+}
+
+.custom-card-body .card-text {
+  font-size: 1rem; // Kích thước chữ nội dung
+  color: #6c757d; // Màu chữ nội dung
+}
+
+.custom-card-button {
+  background-color: #213555 !important; // Màu nền nút
+  color: white; // Màu chữ nút
+  font-size: 0.9rem; // Kích thước chữ
+  font-weight: bold; // Đậm chữ
+  padding: 8px 16px; // Khoảng cách bên trong
+  border: none; // Bỏ viền
+  border-radius: 5px; // Bo góc nút
+  margin-top: auto;
+  width: 50%; // Đặt chiều dài của nút (tương đối với div chứa)
+  max-width: 200px;
+  transition: background-color 0.3s ease, transform 0.2s ease; // Hiệu ứng mượt
+
+  &:hover {
+    background-color: #FDF7F4; // Màu nền khi hover
+    color: black; // Màu chữ khi hover
+    transform: scale(1.05); // Tăng nhẹ kích thước khi hover
   }
-  
-  .custom-card-body .card-title {
-    font-size: 1.25rem; // Kích thước tiêu đề
-    font-weight: bold; // Đậm tiêu đề
-    color: #343a40; // Màu chữ tiêu đề
-  }
-  
-  .custom-card-body .card-text {
-    font-size: 1rem; // Kích thước chữ nội dung
-    color: #6c757d; // Màu chữ nội dung
-  }
-  
-  .custom-card-button {
-    background-color: #213555; // Màu nền nút
-    color: white; // Màu chữ nút
-    font-size: 0.9rem; // Kích thước chữ
-    font-weight: bold; // Đậm chữ
-    padding: 8px 16px; // Khoảng cách bên trong
-    border: none; // Bỏ viền
-    border-radius: 5px; // Bo góc nút
-    width: 50%; // Đặt chiều dài của nút (tương đối với div chứa)
-    max-width: 200px; 
-    transition: background-color 0.3s ease, transform 0.2s ease; // Hiệu ứng mượt
-  
-    &:hover {
-      background-color: #FDF7F4; // Màu nền khi hover
-      color: black; // Màu chữ khi hover
-      transform: scale(1.05); // Tăng nhẹ kích thước khi hover
-    }
-  }
-  
+}
