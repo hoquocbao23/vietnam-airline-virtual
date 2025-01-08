@@ -1,7 +1,7 @@
 import React from 'react';
 import { hubDatas } from "../../data/hubs/hubs-data";
 import { Container, Col, Row, Image } from 'react-bootstrap';
-import HubLayout from "./Hub-Layout";
+import HubLayout from './HubLayout';
 import { Helmet } from 'react-helmet-async';
 
 const HubPage = () => {
