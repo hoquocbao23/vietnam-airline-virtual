@@ -1,8 +1,8 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 .custom-button  {
-    background-color: #FCC737 !important; // Màu nền mặc định
-    color: black !important; // Màu chữ mặc định
+    background-color: #E07B39 !important; // Màu nền mặc định
+    color: white !important; // Màu chữ mặc định
     border: none; // Không có viền
     padding: 10px 20px; // Kích thước nút
     font-size: 1rem; // Kích thước chữ
@@ -14,4 +14,14 @@
       color: black !important; // Màu chữ khi hover
      
     }
+  }
+
+  .custom-nav .nav-link {
+    font-size: 1.25rem; /* Adjust font size as needed */
+    margin: 0 15px; /* Adds horizontal spacing between links */
+    text-transform: uppercase; /* Optional: Makes text uppercase for a clean look */
+  }
+  
+  .custom-nav .nav-link:hover {
+    text-decoration: underline; /* Optional: Adds an underline on hover */
   }

@@ -14,6 +14,9 @@ const Routes = () => {
       <Row className="justify-content-center mb-4 page-title">
         <Col xs={12} md={8} className="text-center ">
           <h1>Our Routes</h1>
+          <p>At Vietnam Airlines Virtual, we have a pretty wide network connecting the world. 
+            With over 30 International Routes and over 50 Domestic routes will give you a variety choices to fly. 
+            As we continue to cooperate with other VAs in the future, our route network will be expanded more.</p>
         </Col>
       </Row>
       <Row className="justify-content-center">

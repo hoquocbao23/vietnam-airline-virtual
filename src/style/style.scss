@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
 
 $primary-color: #166987; // Màu nền của thanh điều hướng
 $button-color: #DEAA79; // Màu nền của nút Join Now và Login
@@ -8,6 +10,9 @@ $button-text-color: #FFFFFF; // Màu chữ trong các nút
 
 body {
     font-family: 'Prompt', sans-serif !important;
+}
+.page-title {
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 

@@ -1,11 +1,10 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&display=swap');
 
-.staff {
-    margin-bottom: 3rem;
-    padding-left: 100px;
-  .staff-title {
-    font-size: 50px;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
+
+h2{
+  font-family: 'Libre Franklin', sans-serif;
 }
+
+
+

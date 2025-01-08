@@ -1,9 +1,12 @@
-
 .about-us {
+    max-width: 800px;
     margin: 3rem auto; // Căn giữa nội dung theo chiều ngang và tạo khoảng cách trên-dưới 
     padding: 2rem; // Tạo khoảng trống bên trong
-    border-radius: 10px; // Bo góc
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Hiệu ứng bóng mờ
-  
     text-align: center;
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        opacity: 0.7; 
+    }
 }
