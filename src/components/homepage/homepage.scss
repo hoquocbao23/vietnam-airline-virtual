@@ -1,4 +1,39 @@
-.about-us {
+.banner {
+    position: relative; // Để đặt overlay
+    overflow: hidden;
+  
+    .banner-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover; // Đảm bảo ảnh không bị méo
+      // filter: blur(1px); // Làm mờ ảnh
+    // Giảm độ trong suốt để tăng nổi bật
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+  
+    .banner-text {
+      color: #86A788;
+      position: absolute;
+      top: 50%; // Căn giữa theo chiều dọc
+      left: 50%; // Căn giữa theo chiều ngang
+      transform: translate(-50%, -50%); // Đặt text vào chính giữa
+      color: #fff; // Màu chữ trắng
+      font-size: 2.5rem; // Kích thước chữ
+      font-weight: bold; // Chữ đậm
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); // Hiệu ứng bóng chữ
+      text-align: center; // Căn giữa chữ
+      z-index: 2; // Đặt lớp chữ lên trên ảnh
+    }
+  }
+  
+.homepage-message{
     max-width: 800px;
     margin: 3rem auto; // Căn giữa nội dung theo chiều ngang và tạo khoảng cách trên-dưới 
     padding: 2rem; // Tạo khoảng trống bên trong

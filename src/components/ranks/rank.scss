@@ -1,0 +1,24 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&display=swap');
+
+.custom-card-body {
+  display: flex;
+  /* Sử dụng flexbox cho phần thân của card */
+  flex-direction: column;
+  /* Các phần tử con xếp theo chiều dọc */
+  justify-content: space-between;
+  /* Đảm bảo rằng các phần tử sẽ có khoảng cách đều */
+  height: 100%;
+  /* Đảm bảo chiều cao card đủ chứa nội dung */
+  background-color: #f8f9fa; // Màu nền cho Card.Body
+  padding: 20px; // Khoảng cách bên trong
+  border-top: 1px solid #dee2e6; // Đường kẻ trên cùng để tách biệt với ảnh
+}
+
+
+
+
+h2{
+  font-family: 'Libre Franklin', sans-serif;
+}
+
