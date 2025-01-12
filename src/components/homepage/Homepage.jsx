@@ -10,12 +10,18 @@ const HomePage = () => {
         <title>Home | Vietnam Airlines Virtual</title>
         <meta name="description" content="Our Routes" />
       </Helmet>
-      <Container fluid className="banner mb-4 p-0">
-        <Image style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
-          src="/images/homepage/main_banner.png" fluid />
-      </Container>
+      <Container fluid className="banner mb-4 p-0 position-relative">
+      {/* Ảnh banner */}
+      <Image
+        className="banner-image"
+        src="/images/homepage/main_banner.png"
+        fluid
+      />
+      
+      
+    </Container>
 
-      <Container className="about-us text-center mt-4">
+      <Container className="homepage-message text-center mt-4">
         <Row>
           <Col>
             <h2>About Us</h2>
@@ -44,7 +50,7 @@ const HomePage = () => {
 
 
 
-      <Container className="about-us text-center mt-4">
+      <Container className="homepage-message text-center mt-4">
         <Row>
           <Col>
             <h2>A Message From CEO</h2>
@@ -64,7 +70,7 @@ const HomePage = () => {
         </Row>
 
 
-        <h3 style={{  textAlign: 'center' }}>IFVN-TaiXipo</h3>
+        <h3 style={{ textAlign: 'center' }}>IFVN-TaiXipo</h3>
         <p style={{ color: "#8B91A1", textAlign: 'center' }}>Chief Executive Officer</p>
       </Container>
 

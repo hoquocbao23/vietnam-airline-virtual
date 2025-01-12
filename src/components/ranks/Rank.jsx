@@ -1,19 +1,77 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Helmet } from 'react-helmet-async';
+import { rankCardData } from "../../data/card/rank-card-data";
+import RankCard from "./Rank-card";
+import "./rank.scss"
 
-const HomePage = () => {
+const Rank = () => {
   return (
     <>
       <Helmet>
         <title>Ranks | Vietnam Airlines Virtual</title>
         <meta name="description" content="Our Rank" />
       </Helmet>
-      <Container fluid className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-        <Row>
-          <Col className="text-center">
-            <h1>To Be Filled Up With A Better Presentation</h1>
+
+      <Container className="mt-5 mb-5">
+        <Row className="justify-content-center mb-4 page-title">
+          <Col xs={12} md={8} className="text-center">
+            <h1>Our Ranks</h1>
           </Col>
+        </Row>
+        
+
+        <Row className="g-5 justify-content-center">
+          {/* Render Regular */}
+          <Col xs={12} md={8} className="text-center mt-5 mb-0 ">
+            <h2 className="rank-type">Regular Rank</h2>
+          </Col>
+          <Row className="g-5 justify-content-center rank-card-container mt-0">
+            {rankCardData
+              .filter(data => data.type === 'Regular Rank')
+              .map((data, index) => (
+                <Col
+                  className="d-flex justify-content-center "
+                  xs={12} sm={12} md={12} lg={4}
+                  key={index}
+                >
+                  <RankCard
+                    key={data.id}
+                    logo={data.logo}
+                    name={data.name}
+                    flight_time={data.flight_time}
+                    aircraft={data.aircraft}
+                  />
+                </Col>
+              ))}
+          </Row>
+
+
+          
+
+          <Col xs={12} md={8} className="text-center mt-5 mb-0 ">
+            <h2 className="rank-type">Membership Rank</h2>
+          </Col>
+          <Row className="g-5 justify-content-center rank-card-container mt-0">
+            {rankCardData
+              .filter(data => data.type === 'Membership Rank')
+              .map((data, index) => (
+                <Col
+                  className="d-flex justify-content-center "
+                  xs={12} sm={12} md={12} lg={4}
+                  key={index}
+                >
+                  <RankCard
+                    key={data.id}
+                    logo={data.logo}
+                    name={data.name}
+                    flight_time={data.flight_time}
+                    aircraft={data.aircraft}
+                  />
+                </Col>
+              ))}
+          </Row>
+
         </Row>
       </Container>
     </>
@@ -21,4 +79,4 @@ const HomePage = () => {
   );
 }
 
-export default HomePage
+export default Rank
