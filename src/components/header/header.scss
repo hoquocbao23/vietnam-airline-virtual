@@ -1,9 +1,10 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 .custom-button  {
-    background-color: #E07B39 !important; // Màu nền mặc định
+    background-color: #FFBB70 ; // Màu nền mặc định
     color: white !important; // Màu chữ mặc định
     border: none; // Không có viền
+    font-weight: bold !important; 
     padding: 10px 20px; // Kích thước nút
     font-size: 1rem; // Kích thước chữ
     border-radius: 5px; // Bo góc cho nút

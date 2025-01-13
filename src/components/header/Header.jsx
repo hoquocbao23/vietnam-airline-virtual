@@ -27,7 +27,7 @@ const Header = () => {
             </Nav>
             <div className="d-flex ">
               {btnDatas.map((data, index) => (
-                <Button target="_blank" rel="noopener noreferrer" href={data.link} key={index} className="mx-1 custom-button">
+                <Button variant="warning" target="_blank" rel="noopener noreferrer" href={data.link} key={index} className="mx-1 custom-button ">
                   {data.name.toUpperCase()}
                 </Button>
               ))}
