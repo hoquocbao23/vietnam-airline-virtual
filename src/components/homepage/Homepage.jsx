@@ -10,16 +10,21 @@ const HomePage = () => {
         <title>Home | Vietnam Airlines Virtual</title>
         <meta name="description" content="Our Routes" />
       </Helmet>
-      <Container fluid className="banner mb-4 p-0 position-relative">
-      {/* Ảnh banner */}
-      <Image
-        className="banner-image"
-        src="/images/homepage/main_banner.png"
-        fluid
-      />
+      <Container fluid className="banner  p-0 position-relative">
+        {/* Ảnh banner */}
+        <Image
+          className="banner-image"
+          src="/images/homepage/main_banner.png"
+          fluid
+        />
+        <div className="welcome-text position-absolute w-100 text-center">
+          <h1>
+            <span className="text-yellow">Welcome to</span> <span className="text-yellow">Vietnam Airlines Virtual</span>
+          </h1>
+        </div>
+      </Container>
+
       
-      
-    </Container>
 
       <Container className="homepage-message text-center mt-4">
         <Row>
