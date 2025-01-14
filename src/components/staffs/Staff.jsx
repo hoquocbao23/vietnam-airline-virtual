@@ -26,7 +26,7 @@ const Staff = () => {
                 <Row className="g-4 justify-content-center">
                     {/* Render Executives */}
                     <Col xs={12} md={8} className="text-center mb-3 ">
-                        <h2 className="staff-role">Executive Team</h2>
+                        <h3 className="staff-role">Executive Team</h3>
                     </Col>
 
                     {executives.length > 0 && (
@@ -71,7 +71,7 @@ const Staff = () => {
                     {/* Render Staff */}
 
                     <Col xs={12} md={8} className="text-center mt-5 mb-0 ">
-                        <h2 className="staff-role">Staff Team</h2>
+                        <h3 className="staff-role">Staff Team</h3>
                     </Col>
                     <Row className="g-4 justify-content-center staff-card-container mt-0">
                         {staffData

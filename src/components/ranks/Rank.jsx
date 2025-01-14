@@ -24,7 +24,7 @@ const Rank = () => {
         <Row className="g-5 justify-content-center">
           {/* Render Regular */}
           <Col xs={12} md={8} className="text-center mt-5 mb-0 ">
-            <h2 className="rank-type">Regular Rank</h2>
+            <h3 className="rank-type">Regular Rank</h3>
           </Col>
           <Row className="g-5 justify-content-center rank-card-container mt-0">
             {rankCardData
@@ -50,7 +50,7 @@ const Rank = () => {
           
 
           <Col xs={12} md={8} className="text-center mt-5 mb-0 ">
-            <h2 className="rank-type">Membership Rank</h2>
+            <h3 className="rank-type">Membership Rank</h3>
           </Col>
           <Row className="g-5 justify-content-center rank-card-container mt-0">
             {rankCardData
