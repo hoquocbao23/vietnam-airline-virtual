@@ -28,7 +28,7 @@ const Footer = () => {
           <Container className="footer-body-content">
             <Row className="align-items-start" >
               {/* Logo */}
-              <Col fluid md={4} lg={4} xs={4} className="footer-logo text-md-start text-center">
+              <Col fluid md={4} lg={4} xs={12} className="footer-logo text-md-start text-center">
                 <img
                   src="/images/logo/vietnam_airlines_favicon.png"
                   alt="Vietnam Airlines Virtual Logo"
