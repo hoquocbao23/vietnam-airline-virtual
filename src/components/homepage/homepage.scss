@@ -27,7 +27,7 @@
     color: white;
 
     h1 {
-      font-size: 3rem;
+      font-size: 4rem;
       font-weight: bold;
 
      
@@ -40,27 +40,14 @@
       }
     }
   }
-
-  .banner-text {
-    color: #86A788;
-    position: absolute;
-    top: 50%; // Căn giữa theo chiều dọc
-    left: 50%; // Căn giữa theo chiều ngang
-    transform: translate(-50%, -50%); // Đặt text vào chính giữa
-    color: #fff; // Màu chữ trắng
-    font-size: 2.5rem; // Kích thước chữ
-    font-weight: bold; // Chữ đậm
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); // Hiệu ứng bóng chữ
-    text-align: center; // Căn giữa chữ
-    z-index: 2; // Đặt lớp chữ lên trên ảnh
-  }
 }
 
 .homepage-message {
   max-width: 800px;
-  margin: 3rem auto; // Căn giữa nội dung theo chiều ngang và tạo khoảng cách trên-dưới 
+   
   padding: 2rem; // Tạo khoảng trống bên trong
   text-align: center;
+  margin: 2rem;
 
   p {
     font-size: 1.2rem;
