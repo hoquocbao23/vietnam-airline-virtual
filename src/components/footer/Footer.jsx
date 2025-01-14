@@ -12,7 +12,7 @@ const Footer = () => {
             <Col md={6} sm={12} lg={6} xs={12} className="text-md-start text-center">
               <h4>Ready for takeoff? Join us now!</h4>
             </Col>
-            <Col md={6} sm={12} lg={6} xs={12} className="text-md-end text-center">
+            <Col md={6} sm={12} lg={6} xs={12} className="text-md-end text-center p-4">
               {btnDatas.map((data, index) => (
                 <Button variant="warning" target="_blank" rel="noopener noreferrer" href={data.link} key={index} className="mx-1 custom-button ">
                   {data.name.toUpperCase()}
