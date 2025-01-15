@@ -2,6 +2,7 @@ import { Button, Col, Container, Row, Image, Nav } from "react-bootstrap";
 import "../footer/footer.scss";
 import "../header/header.scss";
 import { btnDatas } from "../../data/button/button-data";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
@@ -40,10 +41,11 @@ const Footer = () => {
               <Col md={4} lg={4} xs={6} className="footer-links text-md-center text-center" >
                 <h6>Vietnam Airlines Virtual</h6>
                 <ul className="list-unstyled">
-                  <li><Nav.Link href="/fleet">FLEET</Nav.Link></li>
-                  <li><Nav.Link href="/routes">ROUTES</Nav.Link></li>
-                  <li><Nav.Link href="/staffs">STAFF</Nav.Link></li>
-                  <li><Nav.Link href="/ranks">RANKS</Nav.Link></li>
+                  <li><Link to="/hubs" className="nav-link">HUBS</Link></li>
+                  <li> <Link to="/fleet" className="nav-link">FLEET</Link></li>
+                  <li><Link to="/routes" className="nav-link">ROUTES</Link></li>
+                  <li><Link to="/staffs" className="nav-link">STAFF</Link></li>
+                  <li><Link to="/ranks" className="nav-link">RANKS</Link></li>
                 </ul>
               </Col>
 

@@ -14,18 +14,15 @@ const Header = () => {
     <>
       <Navbar expand="lg" style={{ backgroundColor: "#166987" }} data-bs-theme="dark">
         <Container>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Nav.Link href="/" className="d-flex align-items-center">
-            <Image style={{ width: '60px', height: '60px' }} src="/images/logo/vietnam_airlines_favicon.png" />
-          </Nav.Link>
+          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+          <Link to="/" className="nav-link"><Image style={{ width: '60px', height: '60px' }} src="/images/logo/vietnam_airlines_favicon.png" /></Link>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto custom-nav" >
+              <Link to="/hubs" className="nav-link">HUBS</Link>
               <Link to="/fleet" className="nav-link">FLEET</Link>
-              <Nav.Link href="/hubs">HUBS</Nav.Link>
-              <Nav.Link href="/fleet">FLEET</Nav.Link>
-              <Nav.Link href="/routes">ROUTES</Nav.Link>
-              <Nav.Link href="/staffs">STAFF</Nav.Link>
-              <Nav.Link href="/ranks">RANKS</Nav.Link>
+              <Link to="/routes" className="nav-link">ROUTES</Link>
+              <Link to="/staffs" className="nav-link">STAFF</Link>
+              <Link to="/ranks" className="nav-link">RANKS</Link>
             </Nav>
             <div className="d-flex ">
               {btnDatas.map((data, index) => (
