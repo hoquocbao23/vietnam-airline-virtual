@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
+import { Link } from "react-router-dom";
 import { btnDatas } from "../../data/button/button-data";
 import "./header.scss";
 
@@ -19,6 +20,7 @@ const Header = () => {
           </Nav.Link>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto custom-nav" >
+              <Link to="/fleet" className="nav-link">FLEET</Link>
               <Nav.Link href="/hubs">HUBS</Nav.Link>
               <Nav.Link href="/fleet">FLEET</Nav.Link>
               <Nav.Link href="/routes">ROUTES</Nav.Link>
