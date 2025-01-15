@@ -10,6 +10,8 @@ const HomePage = () => {
         <title>Home | Vietnam Airlines Virtual</title>
         <meta name="description" content="homepage" />
       </Helmet>
+
+
       <Container fluid className="banner p-0 position-relative">
         {/* Ảnh banner */}
         <Image
@@ -48,61 +50,77 @@ const HomePage = () => {
         </Container>
       </div>
 
+      
+        <Container fluid className=" mt-4">
+          <Row className="justify-content-center">
+            <Col xs={12} sm={10} md={8} lg={6} xl={7}>
+              <Image
+                src="/images/homepage/landmark.png"
+                fluid
+                className="w-100"
+                alt="Banner"
+              />
+            </Col>
+          </Row>
+        </Container>
+
+        <hr class="short-hr"></hr>
+
+        <Container className="homepage-message text-center">
+          <Row>
+            <Col>
+              <h1>About Us</h1>
+              <p>
+                Vietnam Airlines Virtual is not just a virtual airline but also a vibrant community for aviation enthusiasts who love flying on Infinite Flight Simulator.
+                With a mission to create a professional and engaging platform, Vietnam Airlines Virtual provides a realistic and captivating flying experience to members.
+                The community currently operates a fleet of three aircraft, offering versatility for various flight routes.
+                Our main hubs are Noi Bai International Airport and Tan Son Nhat International Airport, serving as central points for domestic and international connections. Vietnam Airlines Virtual is not just a place to fulfill the passion for flying but also a hub for networking, learning, and exploring the boundless skies together.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container fluid >
+          <Row className="justify-content-center">
+            <Col xs={12} sm={10} md={8} lg={6} xl={7}>
+              <Image
+                src="/images/homepage/banner_1.png"
+                fluid
+                className="w-100"
+                alt="Banner"
+              />
+            </Col>
+          </Row>
+        </Container>
 
 
+        <hr class="short-hr"></hr>
 
-      <Container className="homepage-message text-center mt-4">
-        <Row>
-          <Col>
-            <h1>About Us</h1>
-            <p>
-              Vietnam Airlines Virtual is not just a virtual airline but also a vibrant community for aviation enthusiasts who love flying on Infinite Flight Simulator.
-              With a mission to create a professional and engaging platform, Vietnam Airlines Virtual provides a realistic and captivating flying experience to members.
-              The community currently operates a fleet of three aircraft, offering versatility for various flight routes.
-              Our main hubs are Noi Bai International Airport and Tan Son Nhat International Airport, serving as central points for domestic and international connections. Vietnam Airlines Virtual is not just a place to fulfill the passion for flying but also a hub for networking, learning, and exploring the boundless skies together.
-            </p>
-          </Col>
-        </Row>
-      </Container>
+        <Container className="homepage-message text-center ">
+          <Row>
+            <Col>
+              <h1>A Message From CEO</h1>
+              <p>
+                A warm welcome to Vietnam Airlines Virtual, this is a place where you can explore, learn how to fly, share experiences, and enjoy our beautiful Vietnam landscape.
+                I, TaiXipo, as a Vietnamese, will ensure the quality and professional operations of all pilots and also fly with joy together.
+                I am proud to welcome you on board to our VA!
+              </p>
+            </Col>
+          </Row>
 
-      <Container fluid className="banner mb-4">
-        <Row className="justify-content-center">
-          <Col xs={12} sm={10} md={8} lg={6} xl={7}>
+          <Row xs={2} sm={3} md={8} lg={6} xl={7} className="justify-content-center mt-3 mb-3">
             <Image
-              src="/images/homepage/banner_1.png"
-              fluid
-              className="w-100"
-              alt="Banner"
+              src="/images/staffs/tai_xipo.jpeg"
+              roundedCircle fluid
             />
-          </Col>
-        </Row>
-      </Container>
+          </Row>
 
 
+          <h4 style={{ textAlign: 'center' }}>IFVN-TaiXipo</h4>
+          <p style={{ color: "#8B91A1", textAlign: 'center' }}>Chief Executive Officer</p>
+        </Container>
+      
 
-      <Container className="homepage-message text-center mt-4">
-        <Row>
-          <Col>
-            <h1>A Message From CEO</h1>
-            <p>
-              A warm welcome to Vietnam Airlines Virtual, this is a place where you can explore, learn how to fly, share experiences, and enjoy our beautiful Vietnam landscape.
-              I, TaiXipo, as a Vietnamese, will ensure the quality and professional operations of all pilots and also fly with joy together.
-              I am proud to welcome you on board to our VA!
-            </p>
-          </Col>
-        </Row>
-
-        <Row xs={2} sm={3} md={8} lg={6} xl={7} className="justify-content-center mt-3 mb-3">
-          <Image
-            src="/images/staffs/tai_xipo.jpeg"
-            roundedCircle fluid
-          />
-        </Row>
-
-
-        <h4 style={{ textAlign: 'center' }}>IFVN-TaiXipo</h4>
-        <p style={{ color: "#8B91A1", textAlign: 'center' }}>Chief Executive Officer</p>
-      </Container>
 
 
     </>

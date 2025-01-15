@@ -1,3 +1,4 @@
+
 .banner {
   position: relative; // Để đặt overlay
   overflow: hidden;
@@ -42,16 +43,23 @@
   }
 }
 
+
 .homepage-message {
   max-width: 800px;
    
-  padding: 2rem; // Tạo khoảng trống bên trong
+  // padding: 2rem; // Tạo khoảng trống bên trong
   text-align: center;
-  margin: 2rem;
+  margin: 1rem;
 
   p {
     font-size: 1.2rem;
     line-height: 1.6;
     opacity: 0.7;
   }
+}
+
+.short-hr {
+  width: 80%; 
+  margin: 2rem auto; // Để nó hiển thị ở giữa
+  border: 1px solid black;
 }
