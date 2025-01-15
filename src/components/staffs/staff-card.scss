@@ -26,21 +26,22 @@
 }
 
 .custom-card-button {
-  background-color: #213555 !important; // Màu nền nút
-  color: white; // Màu chữ nút
+  background-color: #295F98 !important; // Màu nền nút
+  color: white !important; // Màu chữ nút
   font-size: 0.9rem; // Kích thước chữ
-  font-weight: bold; // Đậm chữ
+  font-weight: bold !important; // Đậm chữ
   padding: 8px 16px; // Khoảng cách bên trong
   border: none; // Bỏ viền
   border-radius: 5px; // Bo góc nút
   margin-top: auto;
   width: 50%; // Đặt chiều dài của nút (tương đối với div chứa)
   max-width: 200px;
-  transition: background-color 0.3s ease, transform 0.2s ease; // Hiệu ứng mượt
-
-  &:hover {
-    background-color: #FDF7F4; // Màu nền khi hover
-    color: black; // Màu chữ khi hover
-    transform: scale(1.05); // Tăng nhẹ kích thước khi hover
-  }
+  transition: background-color 0.3s ease, color 0.3s ease; // Hiệu ứng mượt khi chuyển đổi
+    
+    &:hover {
+      background-color: white !important; // Màu nền khi hover
+      color: #134B70 !important; // Màu chữ khi hover
+      
+    }
+  
 }
