@@ -36,6 +36,6 @@
     "rollup-plugin": "^1.0.0",
     "rollup-plugin-terser": "^7.0.2",
     "sass-embedded": "^1.81.1",
-    "vite": "^6.0.1"
+    "vite": "^6.0.11"
   }
 }
