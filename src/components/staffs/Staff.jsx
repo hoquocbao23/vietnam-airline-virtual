@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import StaffCard from "./staff-card";
+import TaiXipoCard from "./taixipo-card";
 import { staffData } from "../../data/card/staff-card-data";
 import { Helmet } from 'react-helmet-async';
 import "./staff.scss";
@@ -31,9 +32,9 @@ const Staff = () => {
 
                     {executives.length > 0 && (
 
-                        <Row className="justify-content-center staff-card-container">
-                            <Col xs={12} sm={4} md={4} lg={4} xl={4} className="d-flex justify-content-center ">
-                                <StaffCard
+                        <Row className="justify-content-center">
+                            <Col xs={12}  className="d-flex justify-content-center p-0">
+                                <TaiXipoCard
                                     image={executives[0].image}
                                     name={executives[0].name}
                                     position={executives[0].position}
@@ -52,7 +53,7 @@ const Staff = () => {
                             {executives.slice(1, 4).map((data, index) => (
                                 <Col
                                     key={index}
-                                    xs={12} sm={4} md={4} lg={4} xl={4}
+                                    xs={12} sm={6} md={6} lg={4} xl={4}
                                     className="d-flex justify-content-center "
                                 >
                                     <StaffCard
@@ -73,13 +74,13 @@ const Staff = () => {
                     <Col xs={12} md={8} className="text-center mt-5 mb-0 ">
                         <h3 className="staff-role">Staff Team</h3>
                     </Col>
-                    <Row className="g-4 justify-content-center staff-card-container mt-0">
+                    <Row className="justify-content-center staff-card-container mt-0 p-0">
                         {staffData
                             .filter(data => data.role === 'Staff')
                             .map((data, index) => (
                                 <Col
-                                    className="d-flex justify-content-center "
-                                    xs={12} sm={4} md={4} lg={4} xl={4}
+                                    className="justify-content-center p-2 "
+                                    xs={6} sm={6} md={6} lg={4} xl={4}
                                     key={index}
                                 >
                                     <StaffCard

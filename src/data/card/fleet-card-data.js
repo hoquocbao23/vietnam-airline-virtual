@@ -7,6 +7,7 @@ export const fleetCardData = [
     details: `Manufacturer: Airbus.
               Max distance: 5,600 km.
               Max cruising level: 39000ft.
+              Max cruising speed: M 0.79.
               Number of seats: 184.
               Overall length: 44.51 m.
               Wingspan: 34.1 m.
@@ -22,6 +23,7 @@ export const fleetCardData = [
     details: `Manufacturer: Airbus.
             Max distance: 14,350 km.
             Max cruising level: 43000ft.
+            Max cruising speed: M 0.84.
             Number of seats: 305 or 323.
             Overall length: 66.89 m.
             Wingspan: 64.75 m.
@@ -37,6 +39,7 @@ export const fleetCardData = [
       details: `Manufacturer: Boeing.
                 Max distance: 15,750 km.
                 Max cruising level: 43000ft.
+                Max cruising speed: M 0.85.
                 Number of seats: 274 | 311.
                 Overall length: 63.73 m.
                 Wingspan: 60.93 m.

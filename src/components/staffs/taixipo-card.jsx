@@ -1,25 +1,19 @@
 import { Button, Card, Image  } from "react-bootstrap";
+import useDevice from "../../hook/useDevice";
 import "./staff-card.scss";
 
-const StaffCard = (props) => {
+const TaiXipoCard = (props) => {
+    const isMobile = useDevice();
   return (
     <>
-      {/* <Card style={{ width: "18rem" }}>
-        <Card.Img roundedCircle fluid  src={props.image} className="staff-img"  />
-        <Card.Body className="text-center custom-card-body">
-          <Card.Title>{props.name}</Card.Title>
-          <Card.Text>{props.position}</Card.Text>
-          <Card.Text>{props.introdution}</Card.Text>
-          <div className="d-flex justify-content-center">
-            <Button variant="light" target="_blank" rel="noopener noreferrer" href={props.account} className="custom-card-button">
-              IFC Profile
-            </Button>
-          </div>
-        </Card.Body>
-      </Card> */}
+      
 
-      <div style={{display: "flex", justifyContent: "center", marginTop: "20px" }}>
-        <Card style={{ width: "18rem",  textAlign: "center", borderRadius: "10px" }}>
+      <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
+        <Card style={{ 
+            width: isMobile ? "25rem" : "45rem", 
+            textAlign: "center", 
+            borderRadius: "10px" , 
+            borderColor: "white"}}>
           <Card.Body>
             <div style={{ marginBottom: "15px" }}>
               <Image className="staff-img"
@@ -45,4 +39,4 @@ const StaffCard = (props) => {
     </>
   );
 };
-export default StaffCard;
+export default TaiXipoCard;

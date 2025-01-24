@@ -4,12 +4,16 @@ import FleetCard from "./fleet-card";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { Helmet } from 'react-helmet-async';
 const Fleet = () => {
+
+  
+
   return (
     <>
       <Helmet>
         <title>Fleet | Vietnam Airlines Virtual</title>
         <meta name="description" content="Our Fleet" />
       </Helmet>
+
       <Container className="mt-5 mb-5">
         <Row className="justify-content-center mb-4 page-title">
           <Col xs={12} md={8} className="text-center">
@@ -23,7 +27,6 @@ const Fleet = () => {
                 key={index}
                 image={data.image}
                 name={data.name}
-                description={data.description}
                 details={data.details}
               />
             </Col>

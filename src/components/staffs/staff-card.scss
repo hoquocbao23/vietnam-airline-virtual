@@ -31,10 +31,9 @@
   font-size: 0.9rem; // Kích thước chữ
   font-weight: bold !important; // Đậm chữ
   padding: 8px 16px; // Khoảng cách bên trong
-  border: none; // Bỏ viền
   border-radius: 5px; // Bo góc nút
   margin-top: auto;
-  width: 50%; // Đặt chiều dài của nút (tương đối với div chứa)
+  width: 75%; // Đặt chiều dài của nút (tương đối với div chứa)
   max-width: 200px;
   transition: background-color 0.3s ease, color 0.3s ease; // Hiệu ứng mượt khi chuyển đổi
     
