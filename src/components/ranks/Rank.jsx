@@ -23,7 +23,7 @@ const Rank = () => {
 
         <Row className="g-5 justify-content-center">
           {/* Render Regular */}
-          <Col xs={12} md={8} className="text-center mt-5 mb-0 ">
+          <Col xs={6} md={8} className="text-center mt-5 mb-0 ">
             <h3 className="rank-type">Regular Rank</h3>
           </Col>
           <Row className="g-5 justify-content-center rank-card-container mt-0">
@@ -31,8 +31,8 @@ const Rank = () => {
               .filter(data => data.type === 'Regular Rank')
               .map((data, index) => (
                 <Col
-                  className="d-flex justify-content-center "
-                  xs={12} sm={12} md={12} lg={4}
+                  className="d-flex justify-content-center p-2 "
+                  xs={6} sm={6} md={12} lg={4}
                   key={index}
                 >
                   <RankCard
@@ -57,8 +57,8 @@ const Rank = () => {
               .filter(data => data.type === 'Membership Rank')
               .map((data, index) => (
                 <Col
-                  className="d-flex justify-content-center "
-                  xs={12} sm={12} md={12} lg={4}
+                  className="d-flex justify-content-center p-2"
+                  xs={6} sm={12} md={12} lg={4}
                   key={index}
                 >
                   <RankCard

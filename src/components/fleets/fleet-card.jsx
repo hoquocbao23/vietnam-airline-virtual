@@ -19,7 +19,7 @@ const FleetCard = (props) => {
         <Card.Img variant="top" src={props.image}/>
         <Card.Body >
           <Card.Title className="text-center fw-bold">{props.name}</Card.Title>
-          <Card.Text>{props.description}</Card.Text>
+          {/* <Card.Text>{props.description}</Card.Text> */}
           <hr />
           <Card.Text ><TextWithLineBreaks text={props.details} /></Card.Text>
         </Card.Body>
@@ -28,3 +28,4 @@ const FleetCard = (props) => {
   );
 };
 export default FleetCard;
+export {TextWithLineBreaks};
