@@ -11,24 +11,24 @@ export const staffData = [
     account: "https://community.infiniteflight.com/u/IFVN-TaiXipo/summary"
   },
 
-  {
-    id: 2,
-    image: "/images/staffs/capt_prampram.png",
-    name: "Capt_PramPram",
-    role: "Executives",
-    position: "COO",
-    introdution: `Hello , I am Pramesh , your COO at VNVA. My message is to deliver to you our assurance that you will be in great hands here at VNVA. Despite multiple challenges along the way , we have made this the best VA for you. 
-                  Hope to see you in the IF skies soon!
-                  Regards`,
-    account: "https://community.infiniteflight.com/u/capt_prampram/summary"
-  },
+  // {
+  //   id: 2,
+  //   image: "/images/staffs/capt_prampram.png",
+  //   name: "Capt_PramPram",
+  //   role: "Executives",
+  //   position: "COO",
+  //   introdution: `Hello , I am Pramesh , your COO at VNVA. My message is to deliver to you our assurance that you will be in great hands here at VNVA. Despite multiple challenges along the way , we have made this the best VA for you. 
+  //                 Hope to see you in the IF skies soon!
+  //                 Regards`,
+  //   account: "https://community.infiniteflight.com/u/capt_prampram/summary"
+  // },
 
   {
     id: 3,
     image: "/images/staffs/mathieu_price.png",
     name: "Mathieu_Price",
     role: "Executives",
-    position: "CCO",
+    position: "COO",
     introdution: `Hello, I’m Mathieu Price, 22 years old, from Luxembourg. Passionate about motorsport and aviation, I split my time between the track and the skies on IF. 
                   I look forward to meeting you soon in our virtual community to share this common passion.
                   See you soon`,
@@ -40,7 +40,7 @@ export const staffData = [
     image: "/images/staffs/siuat.png",
     name: "siUatparadiz",
     role: "Executives",
-    position: "HR",
+    position: "CCO",
     introdution: `Hello I’m Louis, 19 years old from Paris. Future cabin crew, my days are split between flying on IF and preparing myself of working in the skies ! 
                   Hope to see you soon in our virtual community `,
     account: "https://community.infiniteflight.com/u/siuatparadiz/summary"
