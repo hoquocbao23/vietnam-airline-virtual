@@ -1,7 +1,7 @@
 export const staffData = [
   {
     id: 1,
-    image: "/images/staffs/tai_xipo.jpeg",
+    image: "/images/staffs/tai_xipo.png",
     name: "IFVN-TaiXipo",
     role: "Executives",
     position: "CEO",
@@ -37,18 +37,17 @@ export const staffData = [
 
   {
     id: 4,
-    image: "/images/staffs/siuat.png",
-    name: "siUatparadiz",
+    image: "/images/staffs/wessel.png",
+    name: "Wessel1",
     role: "Executives",
-    position: "CCO",
-    introdution: `Hello I’m Louis, 19 years old from Paris. Future cabin crew, my days are split between flying on IF and preparing myself of working in the skies ! 
-                  Hope to see you soon in our virtual community `,
-    account: "https://community.infiniteflight.com/u/siuatparadiz/summary"
+    position: "HR",
+    introdution: ``,
+    account: "https://community.infiniteflight.com/u/wessel1/summary"
   },
 
   {
     id: 5,
-    image: "/images/staffs/alden_hoang.jpeg",
+    image: "/images/staffs/alden_hoang.png",
     name: "Alden_Hoang",
     role: "Staff",
     position: "Event Manager",
