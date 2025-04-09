@@ -110,7 +110,7 @@ const HomePage = () => {
 
           <Row xs={2} sm={3} md={8} lg={6} xl={7} className="justify-content-center mt-3 mb-3">
             <Image
-              src="/images/staffs/tai_xipo.jpeg"
+              src="/images/staffs/tai_xipo.png"
               roundedCircle fluid
             />
           </Row>
