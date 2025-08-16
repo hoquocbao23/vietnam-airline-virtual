@@ -47,11 +47,11 @@ export const staffData = [
 
   {
     id: 5,
-    image: "/images/staffs/FreshOuttaPoland.png",
-    name: "FreshOuttaPoland",
+    image: "/images/staffs/tom_z.png",
+    name: "Tom_Z",
     role: "Staff",
     position: "Event Manager",
-    account: "https://community.infiniteflight.com/u/freshouttapoland/summary"
+    account: "https://community.infiniteflight.com/u/tom_z/summary"
 
   },
 
